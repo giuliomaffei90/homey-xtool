@@ -1,0 +1,239 @@
+{
+  "triggers": [
+    {
+      "id": "status_changed",
+      "title": {
+        "en": "Status changed",
+        "it": "Lo stato è cambiato"
+      },
+      "tokens": [
+        {
+          "name": "status",
+          "type": "string",
+          "title": {
+            "en": "Status",
+            "it": "Stato"
+          },
+          "example": "working"
+        },
+        {
+          "name": "previous",
+          "type": "string",
+          "title": {
+            "en": "Previous status",
+            "it": "Stato precedente"
+          },
+          "example": "ready"
+        }
+      ]
+    },
+    {
+      "id": "status_became",
+      "title": {
+        "en": "Status became...",
+        "it": "Lo stato è diventato..."
+      },
+      "titleFormatted": {
+        "en": "Status became [[status]]",
+        "it": "Lo stato è diventato [[status]]"
+      },
+      "args": [
+        {
+          "name": "status",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "offline",
+              "title": {
+                "en": "Offline",
+                "it": "Offline"
+              }
+            },
+            {
+              "id": "booting",
+              "title": {
+                "en": "Booting",
+                "it": "Avvio"
+              }
+            },
+            {
+              "id": "sleeping",
+              "title": {
+                "en": "Sleeping",
+                "it": "In standby"
+              }
+            },
+            {
+              "id": "idle",
+              "title": {
+                "en": "Idle",
+                "it": "Inattivo"
+              }
+            },
+            {
+              "id": "ready",
+              "title": {
+                "en": "Ready to start",
+                "it": "Pronto ad avviare"
+              }
+            },
+            {
+              "id": "framing",
+              "title": {
+                "en": "Framing",
+                "it": "Inquadratura"
+              }
+            },
+            {
+              "id": "measuring",
+              "title": {
+                "en": "Measuring",
+                "it": "Misurazione"
+              }
+            },
+            {
+              "id": "working",
+              "title": {
+                "en": "Working",
+                "it": "In lavorazione"
+              }
+            },
+            {
+              "id": "paused",
+              "title": {
+                "en": "Paused",
+                "it": "In pausa"
+              }
+            },
+            {
+              "id": "finished",
+              "title": {
+                "en": "Finished",
+                "it": "Completato"
+              }
+            },
+            {
+              "id": "error",
+              "title": {
+                "en": "Error",
+                "it": "Errore"
+              }
+            },
+            {
+              "id": "upgrading",
+              "title": {
+                "en": "Updating firmware",
+                "it": "Aggiornamento firmware"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conditions": [
+    {
+      "id": "status_is",
+      "title": {
+        "en": "Status is...",
+        "it": "Lo stato è..."
+      },
+      "titleFormatted": {
+        "en": "Status !{{is|isn't}} [[status]]",
+        "it": "Lo stato !{{è|non è}} [[status]]"
+      },
+      "args": [
+        {
+          "name": "status",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "offline",
+              "title": {
+                "en": "Offline",
+                "it": "Offline"
+              }
+            },
+            {
+              "id": "booting",
+              "title": {
+                "en": "Booting",
+                "it": "Avvio"
+              }
+            },
+            {
+              "id": "sleeping",
+              "title": {
+                "en": "Sleeping",
+                "it": "In standby"
+              }
+            },
+            {
+              "id": "idle",
+              "title": {
+                "en": "Idle",
+                "it": "Inattivo"
+              }
+            },
+            {
+              "id": "ready",
+              "title": {
+                "en": "Ready to start",
+                "it": "Pronto ad avviare"
+              }
+            },
+            {
+              "id": "framing",
+              "title": {
+                "en": "Framing",
+                "it": "Inquadratura"
+              }
+            },
+            {
+              "id": "measuring",
+              "title": {
+                "en": "Measuring",
+                "it": "Misurazione"
+              }
+            },
+            {
+              "id": "working",
+              "title": {
+                "en": "Working",
+                "it": "In lavorazione"
+              }
+            },
+            {
+              "id": "paused",
+              "title": {
+                "en": "Paused",
+                "it": "In pausa"
+              }
+            },
+            {
+              "id": "finished",
+              "title": {
+                "en": "Finished",
+                "it": "Completato"
+              }
+            },
+            {
+              "id": "error",
+              "title": {
+                "en": "Error",
+                "it": "Errore"
+              }
+            },
+            {
+              "id": "upgrading",
+              "title": {
+                "en": "Updating firmware",
+                "it": "Aggiornamento firmware"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

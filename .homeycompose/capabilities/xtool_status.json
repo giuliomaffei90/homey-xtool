@@ -1,0 +1,22 @@
+{
+  "type": "enum",
+  "title": { "en": "Laser status", "it": "Stato laser" },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "icon": "/assets/icon.svg",
+  "values": [
+    { "id": "offline", "title": { "en": "Offline", "it": "Offline" } },
+    { "id": "booting", "title": { "en": "Booting", "it": "Avvio" } },
+    { "id": "sleeping", "title": { "en": "Sleeping", "it": "In standby" } },
+    { "id": "idle", "title": { "en": "Idle", "it": "Inattivo" } },
+    { "id": "ready", "title": { "en": "Ready to start", "it": "Pronto ad avviare" } },
+    { "id": "framing", "title": { "en": "Framing", "it": "Inquadratura" } },
+    { "id": "measuring", "title": { "en": "Measuring", "it": "Misurazione" } },
+    { "id": "working", "title": { "en": "Working", "it": "In lavorazione" } },
+    { "id": "paused", "title": { "en": "Paused", "it": "In pausa" } },
+    { "id": "finished", "title": { "en": "Finished", "it": "Completato" } },
+    { "id": "error", "title": { "en": "Error", "it": "Errore" } },
+    { "id": "upgrading", "title": { "en": "Updating firmware", "it": "Aggiornamento firmware" } }
+  ]
+}

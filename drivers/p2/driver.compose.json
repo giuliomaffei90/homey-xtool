@@ -1,0 +1,37 @@
+{
+  "name": { "en": "xTool P2" },
+  "class": "other",
+  "capabilities": ["xtool_status", "progress", "alarm_contact"],
+  "capabilitiesOptions": {
+    "alarm_contact": {
+      "title": { "en": "Lid open", "it": "Sportello aperto" }
+    }
+  },
+  "platforms": ["local"],
+  "connectivity": ["lan"],
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
+  },
+  "pair": [
+    { "id": "address" }
+  ],
+  "settings": [
+    {
+      "id": "address",
+      "type": "text",
+      "label": { "en": "IP address", "it": "Indirizzo IP" },
+      "value": ""
+    },
+    {
+      "id": "poll_interval",
+      "type": "number",
+      "label": { "en": "Poll interval", "it": "Intervallo di lettura" },
+      "units": { "en": "s" },
+      "value": 5,
+      "min": 2,
+      "max": 60
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+<form id="form" class="homey-form">
+  <div class="homey-form-group">
+    <label class="homey-form-label" for="address">IP</label>
+    <input class="homey-form-input" id="address" type="text" placeholder="192.168.1.50" required>
+  </div>
+  <button class="homey-button-primary-full" type="submit">OK</button>
+</form>
+
+<script>
+  Homey.setTitle('xTool P2');
+  document.getElementById('form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    Homey.showLoadingOverlay();
+    try {
+      const device = await Homey.emit('connect', { address: document.getElementById('address').value });
+      await Homey.createDevice(device);
+      Homey.done();
+    } catch (err) {
+      Homey.hideLoadingOverlay();
+      Homey.alert(err.message || err);
+    }
+  });
+</script>

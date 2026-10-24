@@ -1,0 +1,25 @@
+{
+  "id": "it.giuliomaffei.xtool",
+  "version": "1.0.0",
+  "compatibility": ">=12.11.0",
+  "sdk": 3,
+  "platforms": ["local"],
+  "name": {
+    "en": "xTool P2"
+  },
+  "description": {
+    "en": "Trigger flows from the status of your xTool P2 laser",
+    "it": "Avvia flow in base allo stato del tuo laser xTool P2"
+  },
+  "category": ["tools"],
+  "brandColor": "#1A1A1A",
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Giulio Maffei"
+  }
+}
